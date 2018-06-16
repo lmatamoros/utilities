@@ -22,7 +22,6 @@
     "flake-idgen": "1.1.0",
     "jsonschema": "1.2.4",
     "moment": "2.22.1",
-    "underscore": "1.9.0",
-    "winston": "2.4.2"
+    "underscore": "1.9.0"
   }
 }
