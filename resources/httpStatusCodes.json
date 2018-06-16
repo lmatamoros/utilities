@@ -1,0 +1,15 @@
+{
+    "STATUS_200": 200,
+    "STATUS_400": 400,
+    "STATUS_401": 401,
+    "STATUS_402": 402,
+    "STATUS_404": 404,
+    "STATUS_406": 406,
+    "STATUS_500": 500,
+    "STATUS_600": 600,
+    "STATUS_601": 601,
+    "STATUS_602": 602,
+    "STATUS_603": 603,
+    "STATUS_604": 604,
+    "STATUS_605": 605
+}

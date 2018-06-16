@@ -1,0 +1,28 @@
+{
+  "name": "utilities",
+  "version": "1.0.0",
+  "description": "Utilitarios varios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmatamoros/utilities.git"
+  },
+  "author": "luis.matamoros@efika.solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmatamoros/utilities/issues"
+  },
+  "homepage": "https://github.com/lmatamoros/utilities#README",
+  "private": true,
+  "dependencies": {
+    "biguint-format": "1.0.0",
+    "flake-idgen": "1.1.0",
+    "jsonschema": "1.2.4",
+    "moment": "2.22.1",
+    "underscore": "1.9.0",
+    "winston": "2.4.2"
+  }
+}

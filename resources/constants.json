@@ -1,0 +1,23 @@
+{
+	"MODULE_NAME": "Utils",
+	"IMAGES_FORMATS": ["jpeg", "jpg", "png"],
+	"JPEG_FORMATS": ["jpeg", "jpg"],
+	"IMAGE_DEFAULT_FORMAT": "jpg",
+	"IMAGE_QUALITY": 60,
+	"IMAGE_DEFAULT_PREFIX": "data:image/jpeg;base64,",
+	"REGEX_IMAGE": "^data:image\/+.+;base64,",
+	"REGEX_IMAGE_TYPE": "data:image\/(.*?);base64,",
+	"REGEX_BASE64": "^data:+.+\/+.+;base64,",
+	"REGEX_BASE64_TYPE": "data:+.+\/(.*?);base64,",
+	"REGEX_BASE64_MIME": "data:(.*?);base64,",
+	"REGEX_AUDIO": "^data:audio\/+.+;base64,",
+	"LOG": {
+		"INFO_LEVEL": "info",
+		"ERROR_LEVEL": "error",
+		"WARN_LEVEL": "warn",
+		"VERBOSE_LEVEL": "verbose",
+		"DEBUG_LEVEL": "debug"
+	},
+	"ANDROID_PREFIX": "APA",
+	"DELETE_COLUMN": "Deleted"
+}
