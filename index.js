@@ -115,6 +115,14 @@ Utilities.prototype.md5 = function (text) {
     return crypto.createHash("md5").update(text).digest("hex")
 }
 
+Utilities.prototype.encrypt = function (algorithm, password, iv, text, prefix) {
+    text = prefix + text
+    let cipher = crypto.createCipheriv(algorithm, Buffer.from(password), Buffer.from(iv, "hex"))
+    let encrypted = cipher.update(text)
+    encrypted = Buffer.concat([encrypted, cipher.final()])
+    return encrypted.toString("hex")
+}
+
 Utilities.instance = null
 
 Utilities.getInstance = function () {
