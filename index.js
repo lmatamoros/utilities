@@ -116,11 +116,19 @@ Utilities.prototype.md5 = function (text) {
 }
 
 Utilities.prototype.encrypt = function (algorithm, password, iv, text, prefix) {
-    text = prefix + text
+    text = prefix.charAt(0) + text
     let cipher = crypto.createCipheriv(algorithm, Buffer.from(password), Buffer.from(iv, "hex"))
     let encrypted = cipher.update(text)
     encrypted = Buffer.concat([encrypted, cipher.final()])
     return encrypted.toString("hex")
+}
+
+Utilities.prototype.decrypt = function (algorithm, password, iv, text) {
+    let encryptedText = Buffer.from(text, "hex")
+    let decipher = crypto.createDecipheriv(algorithm, Buffer.from(password), Buffer.from(iv, "hex"))
+    let decrypted = decipher.update(encryptedText)
+    decrypted = Buffer.concat([decrypted, decipher.final()])
+    return decrypted.toString().substring(1)
 }
 
 Utilities.instance = null
